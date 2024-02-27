@@ -4,6 +4,7 @@ public enum VrstaEmocije {
     Radost,
     Ljutnja,
     Tuga,
+    Strah,
     Ljubav,
     Nada,
     Zavist,

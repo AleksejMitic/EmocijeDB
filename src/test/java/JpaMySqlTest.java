@@ -5,7 +5,6 @@ import org.flywaydb.core.Flyway;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
-import org.hibernate.service.spi.Configurable;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.springframework.context.ApplicationContext;
@@ -16,7 +15,6 @@ import java.util.List;
 public class JpaMySqlTest {
 
     protected static SessionFactory sessionFactory;
-
     protected static Session session;
     protected static Flyway flyway;
 
@@ -28,8 +26,7 @@ public class JpaMySqlTest {
         Configuration configuration = new Configuration();
         configuration.configure("hibernate.cfg.xml");
         configuration.addAnnotatedClass(Emocije.class);
-        SessionFactory sessionFactory = configuration.buildSessionFactory();
-        Session session = sessionFactory.openSession();
+        sessionFactory = configuration.buildSessionFactory();
     }
 
     @AfterAll
