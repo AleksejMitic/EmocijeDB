@@ -52,6 +52,12 @@
             <artifactId>flyway-mysql</artifactId>
             <version>9.8.1</version>
         </dependency>
+        <dependency>
+            <groupId>org.hibernate.orm</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>6.1.5.Final</version>
+        </dependency>
+
 
 
 
@@ -74,6 +80,7 @@
                         <excludes>
                             <exclude>**/BaseMySqlTest.java</exclude>
                             <exclude>**/FlywayMySqlTest.java</exclude>
+                            <exclude>**/JpaMySqlTest.java</exclude>
                         </excludes>
                     </configuration>
                 </plugin>
