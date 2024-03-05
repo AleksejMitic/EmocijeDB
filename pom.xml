@@ -77,7 +77,7 @@
               <!---             <include>**/MySqlTest3.java</include> -->
               <!---             <include>**/MySqlTest4.java</include> -->
               <!---             <include>**/MySqlTest5.java</include> -->
-                            <include>**/MySqlTest6.java</include>
+                                <include>**/MySqlTest6.java</include>
                         </includes>
                         <excludes>
                             <exclude>**/BaseMySqlTest.java</exclude>
