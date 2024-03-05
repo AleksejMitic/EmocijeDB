@@ -1,0 +1,2 @@
+public class MySqlTest6 {
+}
